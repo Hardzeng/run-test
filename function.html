@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // function checkage() {
+    //     if (age > 18) {
+    //         return true;
+
+    //     } else {
+    //         return confirm("Did you parents allow you")
+    //     }
+    // }
+    // "use strict"
+
+    // function pow(x, n) {
+    //     let result = x;
+    //     for (let i = 1; i < n; i++)
+    //         result *= x
+    // }
+    // return result;
+    // let x = prompt("x?", '')
+    // let n = prompt("n?", '')
+    // if (n < 1) {
+    //     alert('power ${n}is not supported,use a positive integer')
+
+    // } else {
+    //     alert(pow(x, n))
+    // }
+
+
+    // ask question 问题
+
+    // function ask(question, yes, no) {
+    //     if (confirm(question))
+    //         yes()
+    //     else no();
+    // }
+
+    // function showOk() {
+    //     alert("you agreed");
+    // }
+
+    // function showCancle() {
+    //     alert("you cancled the execution");
+
+    // }
+    // ask("Do you ageree?", showOk, showCancle)
+
+
+    // 箭头函数
+    // let sum = (a, b) => a + b;
+    // alert(sum(1, 2));
+
+    // let age = prompt("what is your age?", 18);
+    // let welcome = (age < 18) ? () => alert('hello') : () => alert('greeting');
+    // welcome();
+
+    function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+    }
+    ask("Do you agree?", () => alert("you are agree"), () => alert("you cancled the execution"))
+</script>
+
+<body>
+
+    <!-- <button onclick="checkage()">点我</button> -->
+
+</body>
+
+</html>
