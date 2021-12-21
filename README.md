@@ -85,7 +85,7 @@ git init   ##初始化文件夹
   git branch -d feature_x
   ```
 
-## Error
+## Attention
 
 1. 在刚进入git bash时上传文件可能会出现以下错误：
 
@@ -104,6 +104,22 @@ fatal: pathspec 'README.md' did not match any files
   - ```
     git init # 初始换文件夹
     ```
+
+2. 上传文件不能不增加 `commit` ,严格按照这三步才能将文件上传上去。
+
+   ```
+   git add <filename> 
+   
+   git commit -m "代码提交信息"   ##备注修改内容，记录作用
+   
+   git push origin master   ##推送至master分支，可以修改为其他分支
+   ```
+
+   
+
+
+
+
 
 
 
