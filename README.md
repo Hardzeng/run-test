@@ -10,7 +10,7 @@
 
 - ###### 第三个是**HEAD**，它指向你最后一次提交的结果；
 
-![image-20211221195204215](../AppData/Roaming/Typora/typora-user-images/image-20211221195204215.png)
+![image-20211221195204215](git tree)
 
 ## Git 分支工作流程
 
@@ -46,20 +46,20 @@ git init   ##初始化文件夹
   git add *
   ```
 
-- ###### 提交改动（添加至HEAD）
+- ###### **提交改动（添加至HEAD）**
 
   ``` 
   git commit -m "代码提交信息"   ##备注修改内容，记录作用
   ```
 
-- ###### 推送至GitHub仓库
+- ###### **推送至GitHub仓库**
 
   ```
   git push origin master   ##推送至master分支，可以修改为其他分支
   ```
 
 
-- ###### 若将仓库添加至某个远程服务器
+- 若将仓库添加至某个远程服务器
 
   ```
   git remote add origin <server>
@@ -84,6 +84,26 @@ git init   ##初始化文件夹
   ```
   git branch -d feature_x
   ```
+
+## Error
+
+1. 在刚进入git bash时上传文件可能会出现以下错误：
+
+```
+fatal: pathspec 'README.md' did not match any files
+```
+
+- 原因：文件夹位置不正确，或者未初始化
+
+- 解决办法
+
+  - ```
+    cd file #进入目标文件夹
+    ```
+
+  - ```
+    git init # 初始换文件夹
+    ```
 
 
 
