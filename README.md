@@ -20,7 +20,7 @@
 
 - ###### 在其他分支上进行开发，完成后再将它们合并到主分支上；
 
-![image-20211221195330895](../AppData/Roaming/Typora/typora-user-images/image-20211221195330895.png)
+![image-20211221195330895](/images/trees.png)
 
 ## 将本地文件上传至GitHub仓库流程
 
