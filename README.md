@@ -10,7 +10,7 @@
 
 - ###### 第三个是**HEAD**，它指向你最后一次提交的结果；
 
-![image-20211221195204215](https://github.com/Hardzeng/run-test/tree/master/images/trees.png)
+![image-20211221195204215](images/trees.png)
 
 ## Git 分支工作流程
 
@@ -20,7 +20,7 @@
 
 - ###### 在其他分支上进行开发，完成后再将它们合并到主分支上；
 
-![image-20211221195330895](/images/trees.png)
+![image-20211221195330895](/images/branch.png)
 
 ## 将本地文件上传至GitHub仓库流程
 
