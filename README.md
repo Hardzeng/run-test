@@ -10,7 +10,7 @@
 
 - ###### 第三个是**HEAD**，它指向你最后一次提交的结果；
 
-![image-20211221195204215](git tree)
+![image-20211221195204215](https://github.com/Hardzeng/run-test/tree/master/images/trees.png)
 
 ## Git 分支工作流程
 
