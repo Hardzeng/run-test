@@ -1,3 +1,5 @@
+
+
 ## GitHub 新手使用指南-常见问题
 
 1. #### 图片不显示
@@ -44,6 +46,44 @@
    git pull
    ```
 
-3.  
+3. #### **上传文件时出现以下报错**
 
-8. 
+   ![](images/error-lock.png)
+
+   **原因：**Git操作时，修改文件导致操作冲突，文件被锁住
+
+   **解决办法：**在该项目仓库中找到`.git`文件夹，将文件夹里面的`index.lock`文件删除即可。
+
+   ```
+   rm -f ./.git/index.lock  #将index.lock文件删除
+   ```
+
+   [相关参考](https://stackoverflow.com/questions/16602544/fatal-unable-to-create-git-index-lock-file-exists)
+
+4.  #### 在刚进入git bash时上传文件可能会出现以下错误：
+
+	```
+    fatal: pathspec 'README.md' did not match any files
+	```
+
+- 原因：文件夹位置不正确，或者未初始化
+
+- 解决办法
+
+  - ```
+    cd file #进入目标文件夹
+    ```
+
+  - ```
+    git init # 初始化文件夹
+    ```
+  
+  1. 上传文件不能不增加 `commit` ,严格按照这三步才能将文件上传上去。
+  
+     ```
+     git add <filename> 
+     git commit -m "代码提交信息"   ##备注修改内容，记录作用
+     git push origin master   ##推送至master分支，可以修改为其他分支
+     ```
+  
+  
