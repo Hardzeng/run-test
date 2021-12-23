@@ -20,11 +20,7 @@
 
 - 在其他分支上进行开发，完成后再将它们合并到主分支上；
 
-<<<<<<< HEAD
 ![image-20211221195330895](images/branch.png)
-=======
-![image-20211221195330895](/images/branch.png)
->>>>>>> 3297e741bc8692383b25359b7458aada4db2678c
 
 ## 将本地文件上传至GitHub仓库流程
 
@@ -108,18 +104,21 @@ fatal: pathspec 'README.md' did not match any files
   - ```
     git init # 初始化文件夹
     ```
-
-2. 上传文件不能不增加 `commit` ,严格按照这三步才能将文件上传上去。
-
-   ```
-   git add <filename> 
-   
-   git commit -m "代码提交信息"   ##备注修改内容，记录作用
-   
-   git push origin master   ##推送至master分支，可以修改为其他分支
-   ```
-
-   
+  
+  2. 上传文件不能不增加 `commit` ,严格按照这三步才能将文件上传上去。
+  
+     ```
+     git add <filename> 
+     
+     git commit -m "代码提交信息"   ##备注修改内容，记录作用
+     
+     git push origin master   ##推送至master分支，可以修改为其他分支
+     ```
+  
+  
+  [常见问题](./CommonProblem.md)
+  
+  
 
 
 
